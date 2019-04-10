@@ -8,7 +8,16 @@ module.exports = {
         {
             test: "./webpack.config.babel.js",
             presets: [
-                ["@babel/preset-env"],
+                "@babel/preset-env", "@babel/preset-typescript",
+            ],
+        },
+        {
+            //
+            // what i expect to work:
+            //
+            test: ["./myPlugin/**/*"],
+            presets: [
+                "@babel/preset-env", "@babel/preset-typescript",
             ],
         },
     ],

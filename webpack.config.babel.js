@@ -1,5 +1,8 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from 'path';
+//
+// work well after add extension '.ts'
+//
 import MyPlugin from './myPlugin/index.ts';
 
 const config = {
